@@ -1,7 +1,7 @@
 import z from 'zod';
 
 export const detailEventSchema = z.object({
-    id: z.string().cuid(),
+    id: z.cuid(),
 });
 
 export const createEventSchema = z.object({
@@ -19,5 +19,5 @@ export const updateEventSchema = z.object({
 });
 
 export const deleteEventSchema = z.object({
-    id: z.string().cuid(),
+    id: z.cuid(),
 });
